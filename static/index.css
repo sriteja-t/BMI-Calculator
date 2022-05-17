@@ -1,0 +1,35 @@
+body {
+    background-color: white;
+    font-family: cursive;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    background-color: chocolate;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    background-color: chocolate;
+    font-family: cursive;
+}
+.main {
+    border-style: groove;
+    border-color: black;
+    text-align: center;
+    border-radius: 25px;
+    background-color: cornsilk;
+}
+
+.info {   
+    background-color:rgb(212, 171, 66);
+    text-align: center;
+}
+
+.result {
+    background-color:burlywood;
+    font-family: sans-serif;
+    text-align: center;
+}

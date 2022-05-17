@@ -3,24 +3,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
     <title>BMI Calculator</title>
 </head>
 <body>
     <h1>BMI Calculator</h1>
         <div class="main">
         <form method="POST" action="/">
-        Weight in kgs:<br>
+        <br>
+        Weight in Kilograms (kg): <br>
         <input type="text" name="weight"><br>
-        Height in cms:<br>
+        <br>
+        Height in Centimeters (cm): <br>
         <input type="text" name="height"><br>
+        <br>
         <button type="submit"value="Submit">Submit</button>
         </form>
     </div>
    <hr> 
+   
     <div class="result">
+        <h2>Result</h2>
         {% if bmi %}
-            <p> Your BMI is {{bmi}}.</p>
+            <p>Your BMI is {{bmi}}.</p>
         {% endif %}
+        <br>
     </div>
+
+<div class="info">
+    <h2>BMI Index</h2>
+    <p>    0-18   Under Weight <br>
+       <br>18-25  Normal Weight <br>
+       <br>25+    Over Weight <br>
+       <br>
+    </p>
+</div>
+    
 </body>
 </html>
